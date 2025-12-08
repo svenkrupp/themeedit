@@ -351,7 +351,7 @@ button.emby-tab-button:nth-child(3) {
 /* Resize cast, scenes and similar movies */
 
 .layout-desktop #castContent .card.overflowPortraitCard {
-    font-size: 895% !important;
+    font-size: 95% !important;
     width: 13.6em !important;
 }
 
@@ -400,8 +400,8 @@ a.overview-expand.emby-button {
 
 /* makes description and tagline bold */
 .detailSectionContent .tagline {
-    font-weight: bold;
-    font-size: 115% !important;
+    font-weight: 300;
+    font-size: 10% !important;
     margin-bottom: 0.3vh;
 }
 
@@ -412,8 +412,8 @@ a.overview-expand.emby-button {
 
 .detailSectionContent .detail-clamp-text,
 .detailSectionContent .overview {
-    font-weight: bold;
-    font-size: 115% !important;
+    font-weight: 300;
+    font-size: 10% !important;
     margin-top: 0.4em;
 }
 
@@ -4213,6 +4213,7 @@ imgLogoIcon {
     font-size: 1.75em;
     font-weight: 600;
 }
+
 
 
 
