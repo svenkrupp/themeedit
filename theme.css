@@ -412,7 +412,7 @@ a.overview-expand.emby-button {
 .detailSectionContent .detail-clamp-text,
 .detailSectionContent .overview {
     font-weight: bold;
-    font-size: 125% !important;
+    font-size: 115% !important;
     margin-top: 0.4em;
 }
 
@@ -4212,6 +4212,7 @@ imgLogoIcon {
     font-size: 1.75em;
     font-weight: 600;
 }
+
 
 
 
