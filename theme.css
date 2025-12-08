@@ -1,4 +1,4 @@
-@import url("https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/colorschemes/cyan.css");
+@import url("https://cdn.jsdelivr.net/gh/svenkrupp/themeedit@latest/colorschemes/cyan.css");
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap");
 body,
 h1,
@@ -401,7 +401,7 @@ a.overview-expand.emby-button {
 /* makes description and tagline bold */
 .detailSectionContent .tagline {
     font-weight: 300;
-    font-size: 10% !important;
+    font-size: 115% !important;
     margin-bottom: 0.3vh;
 }
 
@@ -413,7 +413,7 @@ a.overview-expand.emby-button {
 .detailSectionContent .detail-clamp-text,
 .detailSectionContent .overview {
     font-weight: 300;
-    font-size: 10% !important;
+    font-size: 115% !important;
     margin-top: 0.4em;
 }
 
@@ -4213,6 +4213,7 @@ imgLogoIcon {
     font-size: 1.75em;
     font-weight: 600;
 }
+
 
 
 
