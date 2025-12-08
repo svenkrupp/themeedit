@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/svenkrupp/themeedit@latest/colorschemes/cyan.css");
-@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@300;400;500;600;700&display=swap");
 body,
 h1,
 h2,
@@ -4213,6 +4213,7 @@ imgLogoIcon {
     font-size: 1.75em;
     font-weight: 600;
 }
+
 
 
 
