@@ -1,7 +1,7 @@
 /* Purple color scheme */
 
 :root {
-  --accent: 216, 196, 241;         /* #D8C4F1 */
+  --accent: 205, 170, 250;         /* #D8C4F1 */
   --accent-off: 123, 116, 132;     /* #7B7484 */
   --dark: 34, 31, 38;              /* #221F26 */
   --darkest: 26, 24, 30;           /* #1A181E */
@@ -14,3 +14,4 @@
 #loginPage {background: url("https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/images/login-wallpapers/minimal-purple.png") !important;}
 .layout-tv .backgroundContainer, .layout-desktop .backgroundContainer {background: url("https://cdn.jsdelivr.net/gh/stpnwf/ZestyTheme@latest/images/gradients/purple.png") no-repeat center center;}
 .sessionAppInfo img {filter: invert(40%) sepia(70%) saturate(350%) hue-rotate(215deg) brightness(120%) contrast(60%);}
+
