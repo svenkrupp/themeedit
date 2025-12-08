@@ -351,7 +351,7 @@ button.emby-tab-button:nth-child(3) {
 /* Resize cast, scenes and similar movies */
 
 .layout-desktop #castContent .card.overflowPortraitCard {
-    font-size: 395% !important;
+    font-size: 895% !important;
     width: 13.6em !important;
 }
 
@@ -4213,6 +4213,7 @@ imgLogoIcon {
     font-size: 1.75em;
     font-weight: 600;
 }
+
 
 
 
