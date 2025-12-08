@@ -1709,14 +1709,14 @@ h3,
 h4,
 .textActionButton,
 .emby-button-foreground {
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6) !important;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2) !important;
 }
 .layout-desktop .headerTabs,
 .layout-desktop .headerRight {
-    box-shadow: 1px 3px 6px rgba(var(--darkest), 0.5);
+    box-shadow: 1px 3px 6px rgba(var(--darkest), 0.2);
 }
 .blurhashed {
-    box-shadow: 1px 1px 4px 0px rgba(var(--darkest), 0.3) !important;
+    box-shadow: 1px 1px 4px 0px rgba(var(--darkest), 0.1) !important;
 }
 
 /*Dash and general UI styling*/
@@ -4212,6 +4212,7 @@ imgLogoIcon {
     font-size: 1.75em;
     font-weight: 600;
 }
+
 
 
 
