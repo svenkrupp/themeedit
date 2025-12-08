@@ -1,4 +1,4 @@
-@import url("https://cdn.jsdelivr.net/gh/svenkrupp/themeedit@latest/colorschemes/cyan.css");
+@import url('https://cdn.jsdelivr.net/gh/svenkrupp/themeedit@latest/colorschemes/purple.css');
 @import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap");
 body,
 h1,
@@ -22,6 +22,9 @@ h4 {
     --rounding-large: 24px;
     --rounding-circle: 100px;
 }
+
+
+
 
 /*Style backdrop*/
 .backdropImage {
@@ -350,12 +353,12 @@ button.emby-tab-button:nth-child(3) {
 /* Resize cast, scenes and similar movies */
 
 .layout-desktop #castContent .card.overflowPortraitCard {
-    font-size: 95% !important;
+    font-size: 10% !important;
     width: 13.6em !important;
 }
 
 .layout-desktop #guestCastContent .card.overflowPortraitCard {
-    font-size: 95% !important;
+    font-size: 100% !important;
     width: 13.6em !important;
 }
 
@@ -383,12 +386,13 @@ button.emby-tab-button:nth-child(3) {
 
 /* Increase title font size */
 .detailPagePrimaryContainer {
-    font-size: 125% !important;
+    font-size: 115% !important;
 }
 
 /* increases font size of "Show more" button */
 a.overview-expand.emby-button {
-    font-size: 110%;
+    font-weight: 500;
+    font-size: 100%;
 }
 
 /* Add padding to description*/
@@ -1304,7 +1308,7 @@ progress::-webkit-progress-value {
 .textareaLabelFocused,
 .buttonActive,
 .button-link {
-    color: rgba(var(--accent)) !important;
+    color: rgba(205, 170, 250, 0.81) !important;
 }
 
 #itemDetailPage .button-link {
@@ -1575,15 +1579,23 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     position: static;
     contain: unset;
 }
+/* Customize Unwatched Count & Played Indicators */
 .countIndicator,
 .playedIndicator {
     background: rgba(var(--accent), 1) !important;
     color: rgba(var(--darkest), 1) !important;
-    font-weight: bold;
-    position: absolute;
-    right: 0%;
-    top: 0%;
+    font-size: 102%;
+    font-weight: 700;
+    border-radius: 50px !important;
+    padding: 2px 8px !important;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5) !important;
+    
+    /* FIX: Pin them to the corner */
+    position: absolute !important; 
+    top: 5px !important;    /* 5px spacing from the top edge looks cleaner */
+    right: 5px !important;  /* 5px spacing from the right edge */
 }
+
 .missingIndicator,
 .unairedIndicator {
     box-shadow: 1px 1px 5px 1px rgba(var(--darkest), 0.5);
@@ -1709,14 +1721,43 @@ h3,
 h4,
 .textActionButton,
 .emby-button-foreground {
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2) !important;
+    text-shadow: 0px 0px 4px rgba(236, 199, 251, 0.27) !important;
 }
 .layout-desktop .headerTabs,
 .layout-desktop .headerRight {
     box-shadow: 1px 3px 6px rgba(var(--darkest), 0.2);
 }
+/* HEADER TABS CUSTOM */
+/* FORCE Active Text Color (Red Circled Area) */
+.headerTabs .emby-tabs .emby-tab-button.emby-tab-button-active,
+.headerTabs .emby-tabs .emby-tab-button.emby-tab-button-active * {
+    color: #050505 !important; /* Pure White */
+}
+
+/* FORCE Inactive Text Color (Arrow Area) */
+.headerTabs .emby-tabs .emby-tab-button:not(.emby-tab-button-active),
+.headerTabs .emby-tabs .emby-tab-button:not(.emby-tab-button-active) * {
+    color: rgb(230, 208, 255) !important; /* Light Grey */
+}
 .blurhashed {
     box-shadow: 1px 1px 4px 0px rgba(var(--darkest), 0.1) !important;
+}
+/* 2. Force the Icons (Search, Cast, User) to be White */
+.headerRight .headerButton,
+.headerRight .material-icons {
+    color: #ffffff;
+}
+/* Change right-side icons to Purple on Hover */
+.headerRight .headerButton:hover,
+.headerRight .headerButton:hover .material-icons {
+    color: #aa5cc3 !important; /* Jellyfin Purple - Change this hex to whatever you like! */
+    cursor: pointer;
+}
+ 
+/* Force text to turn White when hovering (Higher Specificity) */
+.headerTabs .emby-tabs .emby-tab-button:not(.emby-tab-button-active):hover,
+.headerTabs .emby-tabs .emby-tab-button:not(.emby-tab-button-active):hover * {
+    color: #5e1875 !important;
 }
 
 /*Dash and general UI styling*/
@@ -2691,7 +2732,7 @@ fieldset {
 
 .headerTabs,
 .headerRight {
-    background-color: rgba(var(--white-off), 0.35) !important;
+    background-color: rgba(241, 211, 253, 0.226) !important;
     border-radius: var(--rounding-circle) !important;
     color: rgba(var(--darkest)) !important;
     backdrop-filter: blur(50px) !important;
@@ -4025,7 +4066,7 @@ imgLogoIcon {
 
 .layout-tv .emby-tabs-slider .emby-button.show-focus:focus {
     background: rgba(var(--accent), 0.5) !important;
-    color: rgb(var(--dark));
+    color: rgba(var(--dark));
     border-radius: var(--rounding-circle);
 }
 
@@ -4212,7 +4253,6 @@ imgLogoIcon {
     font-size: 1.75em;
     font-weight: 600;
 }
-
 
 
 
