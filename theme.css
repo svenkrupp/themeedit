@@ -6,7 +6,7 @@ h2,
 h3,
 h4 {
     font-family: "Google Sans Flex", sans-serif;
-	font-size: 43px;
+	font-size: 43px !important;
 }
 
 :root {
@@ -4213,6 +4213,7 @@ imgLogoIcon {
     font-size: 1.75em;
     font-weight: 600;
 }
+
 
 
 
