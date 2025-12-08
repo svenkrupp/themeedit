@@ -400,7 +400,7 @@ a.overview-expand.emby-button {
 /* makes description and tagline bold */
 .detailSectionContent .tagline {
     font-weight: bold;
-    font-size: 125% !important;
+    font-size: 115% !important;
     margin-bottom: 0.3vh;
 }
 
@@ -4212,5 +4212,6 @@ imgLogoIcon {
     font-size: 1.75em;
     font-weight: 600;
 }
+
 
 
