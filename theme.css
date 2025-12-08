@@ -383,7 +383,7 @@ button.emby-tab-button:nth-child(3) {
 
 /* Increase title font size */
 .detailPagePrimaryContainer {
-    font-size: 115% !important;
+    font-size: 125% !important;
 }
 
 /* increases font size of "Show more" button */
@@ -4212,6 +4212,7 @@ imgLogoIcon {
     font-size: 1.75em;
     font-weight: 600;
 }
+
 
 
 
