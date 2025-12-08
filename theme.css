@@ -353,7 +353,7 @@ button.emby-tab-button:nth-child(3) {
 /* Resize cast, scenes and similar movies */
 
 .layout-desktop #castContent .card.overflowPortraitCard {
-    font-size: 10% !important;
+    font-size: 100% !important;
     width: 13.6em !important;
 }
 
@@ -3288,6 +3288,8 @@ imgLogoIcon {
 }
 
 /* Makes posters larger in the Library view and Home screen */
+
+
 @media (min-width: 31.25em) {
     .layout-desktop .portraitCard,
     .layout-desktop .smallBackdropCard,
