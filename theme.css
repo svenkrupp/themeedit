@@ -1584,10 +1584,10 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .playedIndicator {   /* <--- Added this class */
     background: rgba(var(--accent), 1) !important;
     color: rgba(var(--darkest), 1) !important;
-    font-size: 102%;
+    font-size: 90%;
     font-weight: 700;
     border-radius: 50px !important;
-    padding: 2px 8px !important;
+    padding: 2px 3px !important;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.5) !important;
     
     /* Pin them to the top-right corner */
@@ -1599,10 +1599,10 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .mediaSourceIndicator {   /* <--- Added this class */
     background: rgba(var(--accent), 1) !important;
     color: rgba(var(--darkest), 1) !important;
-    font-size: 102%;
+    font-size: 90%;
     font-weight: 700;
     border-radius: 50px !important;
-    padding: 2px 8px !important;
+    padding: 2px 3px !important;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.5) !important;
     
     /* Pin them to the top-right corner */
