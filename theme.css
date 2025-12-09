@@ -1579,9 +1579,9 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     position: static;
     contain: unset;
 }
-/* Customize Unwatched Count & Played Indicators */
+/* Customize Unwatched Count, Played, & Version Indicators */
 .countIndicator,
-.playedIndicator {
+.playedIndicator {   /* <--- Added this class */
     background: rgba(var(--accent), 1) !important;
     color: rgba(var(--darkest), 1) !important;
     font-size: 102%;
@@ -1590,25 +1590,37 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     padding: 2px 8px !important;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.5) !important;
     
-    /* FIX: Pin them to the corner */
+    /* Pin them to the top-right corner */
     position: absolute !important; 
-    top: 5px !important;    /* 5px spacing from the top edge looks cleaner */
-    right: 5px !important;  /* 5px spacing from the right edge */
+    top: 5px !important;
+    right: 5px !important;
 }
 
+.mediaSourceIndicator {   /* <--- Added this class */
+    background: rgba(var(--accent), 1) !important;
+    color: rgba(var(--darkest), 1) !important;
+    font-size: 102%;
+    font-weight: 700;
+    border-radius: 50px !important;
+    padding: 2px 8px !important;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5) !important;
+    
+    /* Pin them to the top-right corner */
+    position: absolute !important; 
+    top: 5px !important;
+    left: 5px !important;
+}
 .missingIndicator,
 .unairedIndicator {
-    box-shadow: 1px 1px 5px 1px rgba(var(--darkest), 0.5);
-    border-radius: var(--rounding) 0px !important;
-    background: rgba(var(--accent-off));
-    color: rgba(var(--darkest));
-    padding: 0.3em 0.6em;
-    position: absolute;
-    font-weight: bold;
-    text-shadow: none;
-    margin: 0;
-    left: 0%;
-    top: 0%;
+    background: rgba(var(--accent), 1) !important;
+    color: rgba(var(--darkest), 1) !important;
+    font-size: 102%;
+    font-weight: 700;
+    border-radius: 50px !important;
+    padding: 2px 8px !important;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5) !important;
+    left: 5px !important;
+    top: 5px !important; 
 }
 
 /* fix for changes in 10.9.x */
@@ -3287,71 +3299,6 @@ imgLogoIcon {
     width: 315px !important;
 }
 
-/* Makes posters larger in the Library view and Home screen */
-
-
-@media (min-width: 31.25em) {
-    .layout-desktop .portraitCard,
-    .layout-desktop .smallBackdropCard,
-    .layout-desktop .squareCard {
-        width: 33.3333333333%;
-    }
-}
-
-@media (min-width: 43.75em) {
-    .layout-desktop .portraitCard,
-    .layout-desktop .squareCard {
-        width: 25%;
-    }
-}
-
-@media (min-width: 50em) {
-    .layout-desktop .portraitCard,
-    .layout-desktop .squareCard {
-        width: 20%;
-    }
-    .layout-desktop .overflowPortraitCard,
-    .layout-desktop .overflowSquareCard {
-        width: 15vw;
-    }
-}
-
-@media (min-width: 75em) {
-    .layout-desktop .portraitCard,
-    .layout-desktop .squareCard {
-        width: 16.6666666667%;
-    }
-    .layout-desktop .overflowPortraitCard,
-    .layout-desktop .overflowSquareCard {
-        width: 14.4vw;
-    }
-}
-
-@media (min-width: 87.5em) {
-    .layout-desktop .portraitCard,
-    .layout-desktop .smallBackdropCard,
-    .layout-desktop .squareCard {
-        width: 14%;
-    }
-    .layout-desktop .overflowPortraitCard,
-    .layout-desktop .overflowSquareCard {
-        width: 13.3vw;
-    }
-}
-
-@media (min-width: 100em) {
-    .layout-desktop .overflowPortraitCard,
-    .layout-desktop .overflowSquareCard {
-        width: 11.8vw;
-    }
-}
-
-@media (min-width: 120em) {
-    .layout-desktop .overflowPortraitCard,
-    .layout-desktop .overflowSquareCard {
-        width: 11.41vw;
-    }
-}
 
 .layout-mobile .itemBackdrop {
     position: relative;
