@@ -4291,7 +4291,7 @@ imgLogoIcon {
 
 .tmla-mask {
     /* Darken and Blur */
-    background-color: rgba(0, 0, 0, 0.6) !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
     
