@@ -24,8 +24,6 @@ h4 {
 }
 
 
-
-
 /*Style backdrop*/
 .backdropImage {
     filter: blur(6px) saturate(120%) contrast(120%) brightness(40%);
@@ -353,12 +351,12 @@ button.emby-tab-button:nth-child(3) {
 /* Resize cast, scenes and similar movies */
 
 .layout-desktop #castContent .card.overflowPortraitCard {
-    font-size: 100% !important;
+    font-size: 95% !important;
     width: 13.6em !important;
 }
 
 .layout-desktop #guestCastContent .card.overflowPortraitCard {
-    font-size: 100% !important;
+    font-size: 95% !important;
     width: 13.6em !important;
 }
 
@@ -392,7 +390,7 @@ button.emby-tab-button:nth-child(3) {
 /* increases font size of "Show more" button */
 a.overview-expand.emby-button {
     font-weight: 500;
-    font-size: 100%;
+    font-size: 110%;
 }
 
 /* Add padding to description*/
@@ -404,7 +402,7 @@ a.overview-expand.emby-button {
 /* makes description and tagline bold */
 .detailSectionContent .tagline {
     font-weight: 400;
-    font-size: 110% !important;
+    font-size: 120% !important;
     margin-bottom: 0.3vh;
 }
 
@@ -416,7 +414,7 @@ a.overview-expand.emby-button {
 .detailSectionContent .detail-clamp-text,
 .detailSectionContent .overview {
     font-weight: 400;
-    font-size: 110% !important;
+    font-size: 125% !important;
     margin-top: 0.4em;
 }
 
@@ -3012,7 +3010,7 @@ imgLogoIcon {
     margin-bottom: 0.4em;
 }
 
-/* Seccion Peliculas/Series */
+/* Movies/Series Section */
 
 .layout-mobile .itemTags,
 .layout-mobile .itemName.originalTitle,
@@ -3022,7 +3020,7 @@ imgLogoIcon {
     display: none;
 }
 
-/* Quitamos imagen de poster */
+/* Remove poster image */
 .layout-mobile .detailImageContainer .card,
 .layout-mobile .detailImageContainer .card.backdropCard,
 .layout-mobile .detailImageContainer .card.portraitCard,
@@ -3035,7 +3033,7 @@ imgLogoIcon {
     display: none !important;
 }
 
-/* Mostrando Logo y posicionandolo */
+/* Displaying and positioning the logo */
 .layout-mobile .detailLogo {
     display: block;
     width: 15em;
@@ -3043,12 +3041,12 @@ imgLogoIcon {
     top: 45vw;
 }
 
-/* Mismo color de fondo a franja gris */
+/* Same background color to gray stripe */
 .detailRibbon {
     background: rgba(32, 32, 32, 0); /* hardcoded */
 }
 
-/* Sipnosis tamano de 5 lineas */
+/* Synopsis (5 lines) */
 .detail-clamp-text {
     -webkit-line-clamp: 4;
 }
@@ -3073,12 +3071,12 @@ imgLogoIcon {
     text-align: left;
 }
 
-/* moviendo a la Izq Contenedor de botones de pelicula*/
+/* Moving to the Left Movie Button Container*/
 .layout-mobile .mainDetailButtons {
     padding-left: 0;
 }
 
-/* arregalndo padding y margin y aumentando tamano de fanart y agregando degradado */
+/* Fixing padding and margin, increasing the size of the fan art, and adding a gradient. */
 .layout-mobile .itemBackdrop {
     background-size: contain;
     height: 61.5vw;
@@ -3298,6 +3296,8 @@ imgLogoIcon {
 .layout-mobile .mainDrawer {
     width: 315px !important;
 }
+
+
 
 
 .layout-mobile .itemBackdrop {
@@ -4015,7 +4015,7 @@ imgLogoIcon {
 
 .layout-tv .emby-tabs-slider .emby-button.show-focus:focus {
     background: rgba(var(--accent), 0.5) !important;
-    color: rgba(var(--dark));
+    color: rgb(var(--dark));
     border-radius: var(--rounding-circle);
 }
 
@@ -4204,18 +4204,99 @@ imgLogoIcon {
 }
 
 
+/* ########## COLLECTION POSTER RESIZE FIX ########## */
+
+/* Target ALL cards within the items container on a Detail Page */
+.layout-desktop #itemDetailPage .itemsContainer .card {
+    width: 8vw !important;    /* Uses viewport width so it scales with screen */
+    min-width: 200px !important; /* Minimum size in pixels */
+    max-width: 300px !important; /* Maximum size */
+    flex-basis: auto !important; /* Overrides default flex sizing */
+    margin-bottom: 10px !important; /* Adds space between rows */
+}
+
+/* Fix the Title Text Wrapping */
+.layout-desktop #itemDetailPage .itemsContainer .card .cardText {
+    white-space: normal !important;
+    height: auto !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 3 !important; /* Show 3 lines of text */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-top: 5px !important;
+}
+
+/* Optional: Fix the "Movies" header spacing if the cards get too close */
+.layout-desktop #itemDetailPage .sectionTitle {
+    margin-bottom: 1em !important;
+}
+
+/* ########## MOVE 'NEXT UP' TO MAIN LAYOUT ########## */
+
+/* Reset the positioning so it sits between Description and Seasons */
+.layout-desktop .nextUpSection {
+    position: relative !important; /* Puts it back in the document flow */
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important; /* Let it fill the width */
+    margin: 2em 0 !important; /* Adds space above and below */
+    padding: 0 !important;
+    
+    /* Remove the 'floating box' styling (dark bg, blur, border) */
+    background-color: transparent !important;
+    backdrop-filter: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Reset the specific card position inside the section */
+.layout-desktop .nextUpSection .card.overflowBackdropCard.card-hoverable.card-withuserdata {
+    right: auto !important;
+    position: static !important;
+}
+
+/* Fix spacing for the 'Next Up' header text */
+.layout-desktop .nextUpSection .sectionTitle {
+    margin-left: 0 !important;
+    margin-bottom: 0.5em !important;
+}
+
+/* ########## TIGHTEN VERTICAL GAPS ########## */
+
+/* 1. Remove the gap below the description/synopsis text */
+.infoWrapper {
+    margin-bottom: 0.1em !important; /* Reduced from 3vh */
+}
+
+/* 2. Remove the top margin from the "Next Up" box we moved earlier */
+.layout-desktop .nextUpSection {
+    margin-top: 0 !important; /* Removes the 2em top spacing */
+    margin-bottom: 0.5em !important; /* Keeps some space below it */
+}
+
+/* 3. Remove padding above the "Seasons" or "Movies" container */
+.layout-desktop .detailPageSecondaryContainer {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* 4. (Optional) Pull the Section Headers (like "Seasons") up slightly */
+.layout-desktop #itemDetailPage .sectionTitle {
+    padding-top: 0 !important;
+    margin-top: 0.5em !important;
+}
 
 
+/* ########## SIDEBAR MENU BACKDROP (DARK & BLUR) ########## */
 
-
-
-
-
-
-
-
-
-
-
-
+.tmla-mask {
+    /* Darken and Blur */
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    
+    /* SMOOTH TRANSITION SETTINGS */
+    /* Changed from 0.3s to 0.6s and added ease-in-out for a "premium" feel */
+    transition: background-color 0.6s ease-in-out, backdrop-filter 0.6s ease-in-out !important;
+}
 
