@@ -1442,7 +1442,7 @@ progress::-webkit-progress-value {
 /* rounds and add a dark blur to media cover/thumbs on hover */
 .cardOverlayContainer {
     border-radius: var(--rounding) !important;
-    background: rgba(76, 62, 94, 0.42);
+    background: rgba(73, 54, 99, 0.42);
     backdrop-filter: blur(1px);
 }
 
